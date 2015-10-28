@@ -1,0 +1,39 @@
+{
+  "name": "express-nedb-session",
+  "version": "0.1.0",
+  "author": {
+    "name": "Louis Chatriot",
+    "email": "louis.chatriot@gmail.com"
+  },
+  "contributors": [
+    "Louis Chatriot"
+  ],
+  "description": "Nedb-backed session store for Express 4 session middleware",
+  "keywords": [
+    "session",
+    "store",
+    "nedb",
+    "express"
+  ],
+  "homepage": "https://github.com/louischatriot/express-nedb-session",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:louischatriot/express-nedb-session.git"
+  },
+  "dependencies": {
+    "nedb": "^1.2.1"
+  },
+  "devDependencies": {
+    "chai": "1.0.x",
+    "mocha": "1.4.x",
+    "request": "2.9.x",
+    "sinon": "1.3.x",
+    "express": "^4.13.3",
+    "express-session": "^1.12.0"
+  },
+  "scripts": {
+    "test": "mocha --timeout 2000 --reporter spec"
+  },
+  "main": "index",
+  "licence": "MIT"
+}
