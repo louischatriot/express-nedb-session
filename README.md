@@ -19,7 +19,8 @@ var express = require('express')
 
 // Use with the session middleware (replace express with connect if you use Connect)
 server.use(session({ secret: 'yoursecret'
-                   , key: 'yoursessionkey'
+                   , resave: false
+                   , saveUninitialized: false
                    , cookie: { path: '/'
                              , httpOnly: true
                              , maxAge: 365 * 24 * 3600 * 1000   // One year for example
