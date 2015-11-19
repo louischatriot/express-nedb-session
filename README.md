@@ -7,7 +7,7 @@ NeDB-backed session store for the Express 4 session middleware.
 
 ## Install and test
 ```javascript
-npm install connect-nedb-session
+npm install express-nedb-session
 npm test
 ```
 
@@ -15,7 +15,7 @@ npm test
 ```javascript
 var express = require('express')
   , session = require('express-session')
-  , NedbStore = require('connect-nedb-session')(session);
+  , NedbStore = require('express-nedb-session')(session);
 
 // Use with the session middleware (replace express with connect if you use Connect)
 server.use(session({ secret: 'yoursecret'
